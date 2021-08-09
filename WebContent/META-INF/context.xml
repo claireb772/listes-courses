@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource
+	name="jdbc/pool_cnx_gestioncourses"
+		type="javax.sql.DataSource"
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		
+		url="jdbc:sqlserver://localhost:1433;databasename=GestionCourses"
+		username="sa"
+		password="pouet"
+		
+		maxIdle="3"
+		maxTotal="10"
+		maxWaitMillis="10000"
+		
+		removeAbandoned="true"
+		removeAbandonedTimeout="15"
+	/>
+
+
+</Context>
